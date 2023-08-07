@@ -3,6 +3,7 @@ Analysis Functions
 """
 
 import numpy as np
+import math
 from monte_carlo import calculate_distance
 
 def get_all_pairwise_distances(configuration, box_length):
@@ -18,7 +19,7 @@ def get_all_pairwise_distances(configuration, box_length):
     return distances
     
 
-def rdf(values, n_bins, max_value, num_particles, box_length):
+def rdf(values: np.ndarray, n_bins, max_value, num_particles, box_length):
     """
     Compute the RDF for a set of values
     
@@ -58,7 +59,7 @@ def rdf(values, n_bins, max_value, num_particles, box_length):
     
     rdf = []
     
-    rdf = histogram / (4 * math. pi * bin_centers**2 * bin_size * num_particles ** 2 / box_length ** 3)
+    rdf = histogram / (4 * math.pi * bin_centers**2 * bin_size * num_particles ** 2 / box_length ** 3)
     
     return bin_centers, rdf
 
