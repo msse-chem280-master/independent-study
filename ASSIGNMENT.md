@@ -19,6 +19,8 @@ The objective with these modifications is to notably enhance the performance of 
 
 If any topic requires further clarification, please refer to the [Chem 280 website](https://msse-chem-280-2023.github.io/index.html). Each day lists different topics that we discussed during the synchronous course sessions. Note that results from your simulation results should be [comparable with Monte Carlo isotherm from NIST](https://mmlapps.nist.gov/srs/LJ_PURE/mc.htm). Note that links to these benchmarks are also available on the course website.
 
+Note that you should format each version nicely and update your project's README.md accordingly.
+
 ## Part 2 - Performance Evaluation
 
 For this project, systematically evaluate the performance of the three Monte Carlo code versions you have. Consider investigating the code speed by either:
